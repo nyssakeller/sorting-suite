@@ -1,0 +1,28 @@
+{
+  "name": "sorting-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bubbleSort.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyssakeller/sorting-suite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyssakeller/sorting-suite/issues"
+  },
+  "homepage": "https://github.com/nyssakeller/sorting-suite#readme"
+}
