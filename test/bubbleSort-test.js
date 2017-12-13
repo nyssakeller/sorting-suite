@@ -24,5 +24,11 @@ describe('bubbleSort', function() {
     let array = [0, -1, -11, -4, -6, -12, -2];
     bubbleSort(array);
     expect(array).to.deep.equal([-12, -11, -6, -4, -2, -1, 0]);
-  })
+  });
+
+  it('should be able to sort large numbers', function() {
+    let array = [5000, 4050, 2100, 4100];
+    bubbleSort(array);
+    expect(array).to.deep.equal([2100, 4050, 4100, 5000])
+  });
 });
