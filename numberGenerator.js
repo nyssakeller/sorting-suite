@@ -1,10 +1,11 @@
-function numberGenerator( count, maxVal ) {
-  const array = [];
+function numberGenerator(minVal, maxVal, arrayLength) {
+  const randomArray = [];
   
-  for (let i = 0; i < count; i++) {
-    array.push(Math.floor(Math.random() * maxVal));
+  for (let i = 0; i < arrayLength; i++) {
+    let randomNumber = Math.floor(Math.random() * (maxVal - minVal));
+    randomArray.push(randomNumber)
   }
-  return array;
-}
+  return randomArray;
+};
 
 module.exports = numberGenerator;

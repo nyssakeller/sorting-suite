@@ -1,10 +1,8 @@
-let array = [5,2,1,8,6,4,3]
-
 function quickSort(array) {
   let pivot = array[array.length - 1];
   let array1 = [];
   let array2 = [];
-
+  debugger;
   if (array.length <= 1) {
     return array;
   }
