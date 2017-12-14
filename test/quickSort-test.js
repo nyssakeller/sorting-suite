@@ -3,7 +3,7 @@ const { assert } = require('chai');
 const quickSort = require('../quickSort.js');
 const numberGenerator = require('../numberGenerator.js');
 
-describe.only('quickSort', function() {
+describe('quickSort', function() {
 
   it('should be a function', function() {
     expect(quickSort).to.be.a('function');
