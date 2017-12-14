@@ -22,14 +22,6 @@ function merge(array1, array2) {
     };
   };
 
-  while (array1.length) {
-    mergedArray.push(array1.shift());
-  }; 
-
-  while (array2.length) {
-    mergedArray.push(array2.shift());
-  };
-
   mergedArray.push(...array1, ...array2);
   return mergedArray;
 };
