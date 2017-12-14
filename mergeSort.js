@@ -1,7 +1,7 @@
 function mergeSort(array)  {
-  const midPoint = Math.floor( array.length / 2 );
+  const midPoint = Math.floor(array.length / 2);
   const array1 = array.slice(0, midPoint);
-  const array2 = array.slice( midPoint, array.length );
+  const array2 = array.slice(midPoint, array.length);
   
   if(array.length <= 1) {
     return array;
