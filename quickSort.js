@@ -2,7 +2,7 @@ function quickSort(array) {
   let pivot = array[array.length - 1];
   let array1 = [];
   let array2 = [];
-  debugger;
+  
   if (array.length <= 1) {
     return array;
   }
