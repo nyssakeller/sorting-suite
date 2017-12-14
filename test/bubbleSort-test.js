@@ -42,8 +42,8 @@ describe('bubbleSort', function() {
     };
   });
 
-  it('Should be able to sort a random array of 1400 numbers', function() {
-    let array = numberGenerator(1, 1500, 1400);
+  it('Should be able to sort a random array of 500 numbers', function() {
+    let array = numberGenerator(1, 600, 500);
     let sortedArray = bubbleSort(array);
 
     for(let i = 0; i < sortedArray.length-1; i++) {
@@ -51,4 +51,21 @@ describe('bubbleSort', function() {
     };
   });
 
+  it('Should be able to sort a random array of 1000 numbers', function() {
+    let array = numberGenerator(1, 1100, 1000);
+    let sortedArray = bubbleSort(array);
+
+    for(let i = 0; i < sortedArray.length-1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i + 1], true);
+    };
+  });
+
+  it('Should be able to sort a random array of 1500 numbers', function() {
+    let array = numberGenerator(1, 1600, 1500);
+    let sortedArray = bubbleSort(array);
+
+    for(let i = 0; i < sortedArray.length-1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i + 1], true);
+    };
+  });
 });
